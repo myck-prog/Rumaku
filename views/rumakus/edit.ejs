@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <h1 class="text-center">Edit rumaku</h1>
+        <div class="col-6 offset-3">
+            <form action="/rumakus/<%=rumaku._id%>?_method=PUT" method="POST">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="rumaku[title]"
+                        value="<%=rumaku.title %>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" id="location" name="rumaku[location]"
+                        value="<%=rumaku.location %>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="image">Image Url</label>
+                    <input class="form-control" type="text" id="image" name="rumaku[image]"
+                        value="<%=rumaku.image %>">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">rumaku Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">$</span>
+                        <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
+                            aria-describedby="price-label" name="rumaku[price]" value="<%=rumaku.price %>">
+                    </div>
+                </div>
+    
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea class="form-control" type="text" id="description"
+                        name="rumaku[description]"><%= rumaku.description%></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-info">Update rumaku</button>
+                </div>
+            </form>
+            <a href="/rumakus/<%= rumaku._id%>">Back To rumaku</a>
+    
+        </div>
+    </div>
+    
+</body>
+</html>

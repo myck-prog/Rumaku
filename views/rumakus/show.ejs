@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rumaku show</title>
+  </head>
+  <body>
+    
+    <h1><%= rumaku.title %></h1>
+    <h2><%= rumaku.location %></h2>
+    <p> <a href="/rumakus/<%=rumaku._id%>/edit">Edit</a>
+    </p>
+    <p>
+    <form action="/rumakus/<%=rumaku._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+    </p>
+    <footer>
+        <a href="/rumakus">All rumakus</a>
+    </footer>
+</body>
+</html>
