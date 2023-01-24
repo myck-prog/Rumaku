@@ -1,0 +1,32 @@
+Before running everything:
+
+npm install mongoose express method-override 
+set path using const path = require('path')
+set views dulu using 
+
+app.set('views',path.join(__dirname,"views"));
+app.use(express.urlencoded({ extended: true })); //parsing the url body
+app.use(methodOverride("_method"));
+
+REUSABLE CODE:
+PACKAGES ejs-mate using boiler plates. (Partials and included in the tem)
+
+Bootstrap 5 Not demands on jquery anymore, input in the index
+Separate Popper in the introudctions
+
+navbar
+<%- include('../partials/navbar.ejs')%>
+
+flexbox
+mt-auto so when the body doens't take 100%, it still listed as 100% 
+db.campgrounds.find()
+use yelp-camp
+
+using cards
+
+Bootstrap Express Javascrip
+
+ini ada di schema 
+name="rumaku[description]"
+
+d-inline inline styling

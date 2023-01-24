@@ -1,11 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const RumakuSchema = new Schema({
-    title: String,
-    price: String,
-    description: String,
-    location: String
-})
+  title: String,
+  image: String,
+  price: Number,
+  description: String,
+  location: String,
+});
 
-module.exports = mongoose.model('Rumaku', RumakuSchema)
+module.exports = mongoose.model("Rumaku", RumakuSchema);
