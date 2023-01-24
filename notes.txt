@@ -30,3 +30,21 @@ ini ada di schema
 name="rumaku[description]"
 
 d-inline inline styling
+
+
+client side form validations , 
+
+error handling with joi
+
+Authentication using pasport library in node.js
+
+npm install passport passport-local passport-local-mongoose
+Authorization for users and non users 
+
+UserSchema use the plugin to give you a unique validation middleware
+
+$pull array (remove from array mongo. pulling an array. and delee the entire reveiw)
+
+campground delte middleware (delete review when you associate a campgroudn)
+
+Querry middleware using findOneAndDelete, once you find the doc, you can delete it 
