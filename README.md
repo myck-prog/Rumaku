@@ -4,7 +4,7 @@ https://user-images.githubusercontent.com/91393229/214497410-85e3bb32-ebdf-4456-
 
 
 ## What is this ? 
-A Full Stack CRUD website that allows you to see all available rental houses and put a review on it !
+A Full Stack CRUD website using MVC pattern that allows you to see all available rental houses and put a review on it !
 
 ## Tech Stack 
 Express, Node, Mongoose, Bootstrap, MongoDB, HTML, CSS, Mapbox API.
