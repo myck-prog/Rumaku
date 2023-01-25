@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-6">
-    <div id="map" style="width: 400px; height: 300px"></div>
+    <!-- <div id="map" style="width: 400px; height: 300px"></div> -->
     <div class="card mb-3">
       <img src="<%= rumaku.image%>" class="card-img-top" alt="..." />
       <div class="card-body">
@@ -72,7 +72,19 @@
   </div>
 </div>
 
-<script>
-  const mapToken = '"pk.eyJ1IjoibXlja2xhbmRsZWFybnByb2ciLCJhIjoiY2xkYjc0NjJzMDJkMTNvbzBmdmV6MzB5NyJ9.yfmj_yx9uCd6ogJ_ASTeDg"';
+<!-- <script>
+  const mapToken = "pk.eyJ1IjoibXlja2xhbmRsZWFybnByb2ciLCJhIjoiY2xkYjc0NjJzMDJkMTNvbzBmdmV6MzB5NyJ9.yfmj_yx9uCd6ogJ_ASTeDg";
   const rumaku = <%- JSON.stringify(rumaku) %>
+</script>
+<script src="/public/showPageMaps.js"></script> -->
+
+<script>
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoibXlja2xhbmRsZWFybnByb2ciLCJhIjoiY2xkYjc0NjJzMDJkMTNvbzBmdmV6MzB5NyJ9.yfmj_yx9uCd6ogJ_ASTeDg";
+  const map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/light-v10", // stylesheet location
+    center: [47, 122], // starting position [lng, lat]
+    zoom: 10, // starting zoom
+  });
 </script>
