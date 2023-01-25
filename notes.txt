@@ -67,3 +67,12 @@ there fore we need mergeParams: true therefore we have the id
 Serving Static Assets. 
 
 login and logout
+
+controlllers, move some functionality moves some and MVC patern, heavy modelling on the models .
+rendering the view and controling
+
+geo.json from mapbox. 
+types points, coordinates, 
+mongo support geojson query
+
+mapbox geocoding api and mapbox gl js for interactive mergeParams 
