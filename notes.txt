@@ -48,3 +48,22 @@ $pull array (remove from array mongo. pulling an array. and delee the entire rev
 campground delte middleware (delete review when you associate a campgroudn)
 
 Querry middleware using findOneAndDelete, once you find the doc, you can delete it 
+
+Configuring session:
+npm i express-session
+
+Configuring Flash:
+npm i connect-flash
+Adding all the success request to the template variable and treat them as a local success
+
+Under routes, we can use passport.authenticate
+
+Protecting campgrouds unless you are signed in 
+Check authentication, currently sign in or not
+
+annoying thing in express router, they keep the param separate, we don't have the id, in separte params
+there fore we need mergeParams: true therefore we have the id 
+
+Serving Static Assets. 
+
+login and logout
