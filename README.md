@@ -22,4 +22,5 @@ Passport
 - Visualization using Mapbox API *need to be revised*
 - Hosted in heroku
 
-### p.s. Old Project Revisited in the new repo
+#### p.s
+- p.s. Old Project Revisited in the new repo
